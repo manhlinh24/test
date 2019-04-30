@@ -1,3 +1,3 @@
 <?php
 
-echo "This is a simple web application v5";
+echo "This is a simple web application v6";
