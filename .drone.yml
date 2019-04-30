@@ -1,0 +1,12 @@
+pipeline:
+  ssh:
+    image: appleboy/drone-ssh
+    host: 171.244.48.104
+    username: root
+    password: cfGDsWqQMjnlEiw90C81Tgi8TP
+    port: 22
+    script:
+      - cd /opt/test/
+      - git pull origin master
+      - cp index.php /var/www/html/
+      - systemctl restart httpd
